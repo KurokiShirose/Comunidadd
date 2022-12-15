@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  display: none;
+  padding: 10px 0 0;
+}
+
+.cstm-label {
+  display: none;
+}
+
+input:checked + label {
+  color: #555;
+  border: 2px solid rgb(56, 55, 52);
+  border-radius: 25px;
+  background-color: rgb(56, 55, 52);
+  color: white;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
